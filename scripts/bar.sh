@@ -24,18 +24,6 @@ cpu() {
 	printf "^c$white^ ^b$grey^ $cpu_val"
 }
 
-pkg_updates() {
-	# updates=$(doas xbps-install -un | wc -l) # void
-	updates=$(checkupdates | wc -l)   # arch , needs pacman contrib
-	# updates=$(aptitude search '~U' | wc -l)  # apt (ubuntu,debian etc)
-
-	if [ -z "$updates" ]; then
-		printf "^c$green^ Fully Updated"
-	else
-		printf "^c$green^ $updates"" updates"
-	fi
-}
-
 mem() {
 	printf "^c$blue^^b$black^  "
 	printf "^c$blue^ $(free -h | awk '/^Mem/ { print $3 }' | sed s/i//g)"
@@ -55,8 +43,8 @@ clock() {
 
 while true; do
 
-	[ $interval = 0 ] || [ $(($interval % 3600)) = 0 ] && updates=$(pkg_updates)
+	[ $interval = 0 ] || [ $(($interval % 3600)) = 0 ]
 	interval=$((interval + 1))
 
-	sleep 1 && xsetroot -name "$updates $(cpu) $(mem) $(wlan) $(clock)"
+	sleep 1 && xsetroot -name "$(cpu) $(mem) $(wlan) $(clock)"
 done

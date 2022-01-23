@@ -5,7 +5,7 @@ static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "nerd-fonts:size=12", "monospace:size=12"};
+static const char *fonts[]          = { "monospace:size=11", "fontawesome:size=13"};
 static const char dmenufont[]       = "monospace:size=11";
 
 //background colour
@@ -13,7 +13,7 @@ static const char col_gray1[]       = "#29353B";
 //inactive window border
 static const char col_gray2[]       = "#444444";
 //font colour
-static const char col_gray3[]       = "#9b6617";
+static const char col_gray3[]       = "#E67300";
 //current window colour and tag colour
 static const char col_gray4[]       = "#EAFFE6";
 //bar colour
