@@ -13,23 +13,21 @@ static const char col_gray1[]       = "#29353B";
 //inactive window border
 static const char col_gray2[]       = "#444444";
 //font colour
-static const char col_gray3[]       = "#bbbbbb";
+static const char col_gray3[]       = "#9b6617";
 //current window colour and tag colour
-static const char col_gray4[]       = "#eeeeee";
+static const char col_gray4[]       = "#EAFFE6";
 //bar colour
 static const char col_cyan[]        = "#FFAB2E";
-//top bar
-static const char col_orange[]      = "#9b6617";
 
 
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray4, col_orange,  col_cyan  },
+	[SchemeSel]  = { col_gray4, col_gray1,  col_cyan  },
 };
 
 /* tagging */
-static const char *tags[] = { "", "", "", "", "", "", "", "", "" };
+static const char *tags[] = { "", "", "", "", "", "", "", "" };
 
 static const Rule rules[] = {
 	/* xprop(1):
