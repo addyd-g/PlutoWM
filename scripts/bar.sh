@@ -31,7 +31,7 @@ mem() {
 
 pkg_updates() {
 	# updates=$(doas xbps-install -un | wc -l) # void
-	updates=$(checkupdates-aur | wc -l)   # arch , needs pacman contrib
+	updates=$(checkupdates+aur | wc -l)   # arch , needs pacman contrib
 	# updates=$(aptitude search '~U' | wc -l)  # apt (ubuntu,debian etc)
 
 	if [ -z "$updates" ]; then
