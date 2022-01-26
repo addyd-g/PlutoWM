@@ -17,6 +17,9 @@ darkblue=#6080a0
 
 interval=0
 
+weather() {
+}
+
 cpu() {
 	cpu_val=$(grep -o "^[^ ]*" /proc/loadavg)
 
@@ -31,7 +34,7 @@ mem() {
 
 pkg_updates() {
 	# updates=$(doas xbps-install -un | wc -l) # void
-	updates=$(checkupdates+aur | wc -l)   # arch , needs pacman contrib
+	updates=$(checkupdates-aur | wc -l)   # arch , needs pacman contrib
 	# updates=$(aptitude search '~U' | wc -l)  # apt (ubuntu,debian etc)
 
 	if [ -z "$updates" ]; then
@@ -59,5 +62,5 @@ while true; do
 	[ $interval = 0 ] || [ $(($interval % 3600)) = 0 ] && updates=$(pkg_updates)
 	interval=$((interval + 1))
 
-	sleep 1 && xsetroot -name " $(cpu) $(mem) $(wlan) $updates $(clock)"
+	sleep 1 && xsetroot -name " $(weather) $(cpu) $(mem) $(wlan) $updates $(clock)"
 done

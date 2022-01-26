@@ -2,4 +2,4 @@
 
 # run bar script and dwm ( do not remove this )
 /bin/dash ~/.config/dwm/scripts/bar.sh &
-exec dwmk
+exec dwm
