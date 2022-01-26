@@ -17,9 +17,6 @@ darkblue=#6080a0
 
 interval=0
 
-weather() {
-}
-
 cpu() {
 	cpu_val=$(grep -o "^[^ ]*" /proc/loadavg)
 
@@ -62,5 +59,5 @@ while true; do
 	[ $interval = 0 ] || [ $(($interval % 3600)) = 0 ] && updates=$(pkg_updates)
 	interval=$((interval + 1))
 
-	sleep 1 && xsetroot -name " $(weather) $(cpu) $(mem) $(wlan) $updates $(clock)"
+	sleep 1 && xsetroot -name " $(cpu) $(mem) $(wlan) $updates $(clock)"
 done

@@ -1,5 +1,5 @@
 #!/bin/sh
 
 # run bar script and dwm ( do not remove this )
-/bin/dash ~/.config/dwm/scripts/bar.sh &
+/bin/sh ~/.config/dwm/scripts/bar.sh &
 exec dwm
