@@ -25,3 +25,10 @@ sudo make install
 (Don't worry I am currently working on a script to install the whole bunch automatically instead of needing to do each part separately)
 
 Start at login with `exec ~/.config/PlutoWM/scripts/./plutowm` in your .xinitrc file.
+
+# FUTURE PLANS
+
+* Weather in bar
+* Pull-down widget
+* Customise dmenu more
+* Increase stability
