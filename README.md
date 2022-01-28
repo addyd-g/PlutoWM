@@ -1,6 +1,6 @@
 # PlutoWM
 
-Pluto WM is my fork of dwm and st. It is designed to be easy on the eyes, readable and quick to use which maintaining a degree of practicalness and hacker flair.
+Pluto WM is my fork of dwm and st, inspired by other projects such as chadwm. It is designed to be easy on the eyes, readable and quick to use which maintaining a degree of practicalness and hacker flair.
 
 ![2022-01-28-225620_1920x1080_scrot](https://user-images.githubusercontent.com/97194940/151632885-88858aa4-792b-467e-8577-c2053a17ac19.png)
 
@@ -17,6 +17,11 @@ cd ~/.config/PlutoWM/dwm
 sudo make install
 cd ~/.config/PlutoWM/st
 sudo make install
+cd ~/.config/PlutoWM/scroll
+sudo make install
+cd ~/.config/PlutoWM/dmenu
+sudo make install
 ```
+(Don't worry I am currently working on a script to install the whole bunch automatically instead of needing to do each part separately)
 
 Start at login with `exec ~/.config/PlutoWM/scripts/./plutowm` in your .xinitrc file.
