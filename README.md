@@ -6,8 +6,8 @@ Pluto WM is my fork of dwm and st. It is designed to be easy on the eyes, readab
 
 # REQUIREMENTS
 
-[*] FiraCode font
-[*] Font Awesome
+* FiraCode font
+* Font Awesome
 
 # HOW TO INSTALL
 ```
