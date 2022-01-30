@@ -1,0 +1,21 @@
+#!/bin/sh
+
+cd ~/.config/PlutoWM/dwm
+rm config.h
+make
+make clean install
+
+cd ~/.config/PlutoWM/st
+rm config.h
+make
+make clean install
+
+cd ~/.config/PlutoWM/scroll
+rm config.h
+make
+make clean install
+
+cd ~/.config/PlutoWM/dmenu
+rm config.h
+make
+make clean install
