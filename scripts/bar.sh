@@ -10,7 +10,7 @@ white=#c7b89d
 grey=#222D32
 blue=#6f8faf
 red=#ec6b64
-darkblue=#485C70
+yellow=#CDF51D
 
 # ^c$var^ = fg color
 # ^b$var^ = bg color
@@ -38,9 +38,9 @@ pkg_updates() {
 	# updates=$(aptitude search '~U' | wc -l)  # apt (ubuntu,debian etc)
 
 	if [ -z "$updates" ]; then
-		printf "^b$grey^^c$darkblue^  No Updates"
+		printf "^b$grey^^c$blue^  No Updates"
 	else
-		printf "^b$grey^^c$blue^  $updates"" Updates"
+		printf "^b$grey^^c$yellow^  $updates"" Updates"
 	fi
 }
 
